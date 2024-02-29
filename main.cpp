@@ -174,7 +174,6 @@ int main() {
                 std::cin >> command;
             }
             if (command == "\\o") {
-                // ввод координат клетки:
                 int x, y;
                 if (is_bot) {
                     fin >> x >> y;
@@ -197,7 +196,6 @@ int main() {
                 // открытие клеток
                 // ....
             } else if (command == "\\f") {
-                // ввод координат клетки:
                 int x, y;
                 if (is_bot) {
                     fin >> x >> y;
@@ -211,8 +209,6 @@ int main() {
                 if (x < 0 || x >= N || y < 0 || y >= M || field_player[x][y] >= 0) continue;
                 if (field_player[x][y] == -1) field_player[x][y] = -2;
                 else field_player[x][y] = -1;
-                // постановка флага
-                // ....
             } else if (command == "\\n") {
                 break;
             } else if (command == "\\b") {
@@ -223,5 +219,4 @@ int main() {
             }
         }
     }
-    return 0;
 }
