@@ -113,8 +113,8 @@ void safe_field() {
 }
 int main() {
     #if defined(_WIN32) || defined(_WIN64)
-        SetConsoleCP(1251);
-        SetConsoleOutputCP(1251);
+        SetConsoleCP(CP_UTF8);
+        SetConsoleOutputCP(CP_UTF8);
     #endif
 
     while (true) {
